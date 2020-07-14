@@ -8,6 +8,6 @@ namespace leave_managment.Interfaces
 {
     public interface ILeaveTypeInterface : IInterfaceBase<LeaveType>
     {
-        ICollection<LeaveType> GetEmplpyeesByLeaveType(int id);
+        ICollection<LeaveType> GetEmployeesByLeaveType(int id);
     }
 }

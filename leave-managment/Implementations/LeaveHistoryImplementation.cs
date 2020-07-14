@@ -40,6 +40,11 @@ namespace leave_managment.Implementations
             return leaveHistories;
         }
 
+        public bool isExists(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool Save()
         {
             return _db.SaveChanges() > 0;

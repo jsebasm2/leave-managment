@@ -51,9 +51,14 @@ namespace leave_managment.Implementations
             return Save();
         }
 
-        public ICollection<LeaveType> GetEmplpyeesByLeaveType(int id)
+        public ICollection<LeaveType> GetEmployeesByLeaveType(int id)
         {
             throw new NotImplementedException();
+        }
+
+        public bool isExists(int id)
+        {
+             return _db.LeaveTypes.Any(q => q.Id == id);
         }
     }
 }
